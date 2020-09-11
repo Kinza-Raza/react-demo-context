@@ -6,9 +6,9 @@ import valueContext from './valueContext';
 
 function App(props) {
 
-    //let [number, setNumber] = React.useState(45);
+    let val = React.useState(45);
   return (
-    <valueContext.Provider value={67}>
+    <valueContext.Provider value={val}>
       <div> App 
       <Parent></Parent>
     </div>

@@ -7,7 +7,10 @@ function Child() {
   let val = React.useContext(valueContext);
   
   return (
-    <div> Child number: {val}</div>
+    <div> Child number: {val[0]}
+    <br></br>
+    <button onClick = { ()=> {val[1](++val[0])} }>Increase Number</button>
+    </div>
   );
 }
 
